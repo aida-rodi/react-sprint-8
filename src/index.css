@@ -137,14 +137,19 @@ nav {
 
 /* =========== STARSHIPS ===========*/
 .starshipsPageDiv {
-  margin-top: 250px;
+  margin-top: 260px;
+}
+
+.loading {
+  font-size: 1.5em;
 }
 
 .starshipInfoDiv {
   background-color: #1b1b1b;
   width: 65vw;
   margin: 1.25em 0;
-  padding: 1.2em 0em 1.1em 1.5em;
+  padding: 1.2em 1.5em 1.1em 1.5em;
+  cursor: pointer;
 }
 
 .starshipName {
@@ -157,9 +162,64 @@ nav {
 }
 /* ================================ */
 
+/* =========== STARSHIP INFO CARD ===========*/
+.starshipsInfoCardDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+.starshipImageDiv {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  margin-right: 0.5em;
+}
+
+.starshipImage {
+  width: 100%;
+}
+
+.starshipsInfoCardDiv ul {
+  list-style: none; 
+  padding: 1em; 
+  margin: 0; 
+  line-height: 2;
+  font-size: 1.25em;
+}
+
+ul li {
+  border-bottom: 1px solid white;
+  width: 400px;
+  text-align: left;
+  padding: 5px;
+}
+
+.infoCategory {
+  font-weight: 500;
+}
+/* ========================================== */
+
 @media (max-width: 650px) {
   .loginAndSignupDiv {
     display: none;
+  }
+}
+@media (max-width: 1500px) {
+  .starshipsInfoCardDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .starshipImageDiv {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
   }
 }
 
