@@ -144,6 +144,12 @@ nav {
   font-size: 1.5em;
 }
 
+.loadingMore {
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
 .starshipInfoDiv {
   background-color: #1b1b1b;
   width: 65vw;
