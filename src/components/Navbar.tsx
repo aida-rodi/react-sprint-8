@@ -1,19 +1,23 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 
-export function Navbar() {
+const Navbar = () => {
   return (
     <nav>
       <div className='navbarTopDiv'>
         <button className='logoButton'>
           <Link to={'/'}>
-            <img src={logo} className='logo' alt="logo" />
+            <img src={logo} className='logo' alt="Star Wars logo" />
           </Link>
         </button>
         <div className='loginAndSignupDiv'>
-          <button>LOG IN</button>
+          <button>
+            <Link to={'/login'}>LOG IN</Link>            
+          </button>
           <p className='divider'>//</p>
-          <button>SIGN UP</button>
+          <button>
+            <Link to={'/signup'}>SIGN UP</Link>
+          </button>
         </div>
       </div>
 
@@ -28,3 +32,5 @@ export function Navbar() {
     </nav>
   )
 }
+
+export default Navbar

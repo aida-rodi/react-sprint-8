@@ -52,7 +52,7 @@ button:hover {
   color: #ffffff;
 }
 
-/* ============ NAVBAR ============ */
+/* ============== NAVBAR ============== */
 nav {
   width: 100%;
   position: fixed;
@@ -123,9 +123,9 @@ nav {
 .navbarStarshipsButton {
   border-right: 1px solid #4e4e4e;
 }
-/* ================================ */
+/* ==================================== */
 
-/* ============= HOME ==============*/
+/* ================ HOME ============== */
 .homePageDiv {
   margin-top: 17%;
 }
@@ -133,9 +133,9 @@ nav {
 .welcomeGif {
   width: 80vw;
 }
-/* ================================ */
+/* ==================================== */
 
-/* =========== STARSHIPS ===========*/
+/* ============== STARSHIPS ============*/
 .starshipsPageDiv {
   margin-top: 260px;
 }
@@ -166,9 +166,9 @@ nav {
 .starshipModel {
   font-size: 1.3em;
 }
-/* ================================ */
+/* ========================================= */
 
-/* =========== STARSHIP INFO CARD ===========*/
+/* =========== STARSHIP INFO CARD ========== */
 .starshipsInfoCardDiv {
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@ nav {
 }
 
 ul li {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #4e4e4e;
   width: 400px;
   text-align: left;
   padding: 5px;
@@ -207,6 +207,47 @@ ul li {
   font-weight: 500;
 }
 /* ========================================== */
+
+/* ================== LOG IN ================= */
+.logInFormDiv {
+  /* border: 3px solid blueviolet; */
+  margin-top: 220px;
+}
+
+.logInInputsDiv {
+  /* border: 3px solid blueviolet; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logInInputsDiv input {
+  margin-bottom: 1.75em;
+  padding: 0.5em;
+  width: 10em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #4e4e4e;
+  font-family: inherit;
+  font-size: 1.2em;
+}
+
+.logInInputsDiv button {
+  margin: 0;
+  margin-top: 0.5em;
+  padding: 0.5em 1.25em;
+  font-size: 1.25em;
+  border: none;
+  background-color: #4e4e4e;
+}
+
+.googleLogo {
+  width: 1em;
+}
+
+.registerNowDiv {
+}
+/* ============================================ */
 
 @media (max-width: 650px) {
   .loginAndSignupDiv {

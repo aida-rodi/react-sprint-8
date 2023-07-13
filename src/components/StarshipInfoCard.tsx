@@ -1,17 +1,20 @@
 import { useEffect, useState } from "react";
 
 export function StarshipInfoCard({selectedStarship}: any) {
-  const [image, setImage] = useState("");
+  const [image, setImage] = useState('');
 
   useEffect(() => {
     const imageId = selectedStarship.url.slice(32, -1);
     setImage(`https://starwars-visualguide.com/assets/img/starships/${imageId}.jpg`);
   }, [selectedStarship.url]);
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    e.currentTarget.src = `https://starwars-visualguide.com/assets/img/big-placeholder.jpg`;
+  };
 
   return (
     <div className="starshipsInfoCardDiv">
       <div className="starshipImageDiv">
-      <img className="starshipImage" src={image} alt={selectedStarship.name + ' image'}></img>
+      <img className="starshipImage" src={image} alt={selectedStarship.name + ' image'} onError={handleImageError}></img>
       </div>
       <div>
         <ul>
@@ -29,5 +32,5 @@ export function StarshipInfoCard({selectedStarship}: any) {
         </ul>
       </div>
     </div>
-    )
+  )
 };

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Navbar } from '../components/Navbar';
+import Navbar from '../components/Navbar';
 import axios from 'axios';
 import InfiniteScroll from "react-infinite-scroll-component";
 import { StarshipInfoCard } from '../components/StarshipInfoCard';
